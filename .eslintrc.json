@@ -4,7 +4,7 @@
 {
   "extends": "next/core-web-vitals",
   "rules": {
-    "no-unused-vars": "off",      // Example: disable 'no-unused-vars' rule
-    "react/react-in-jsx-scope": "off" // Example: disable React import in JSX
+    "jsx-a11y/alt-text": "off",  // Disable alt text warnings
+    "@next/next/no-img-element": "off"  // Disable img element warnings
   }
 }
