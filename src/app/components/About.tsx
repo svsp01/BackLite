@@ -4,7 +4,9 @@ import { forwardRef } from 'react'; // Import forwardRef from React
 import { motion } from 'framer-motion';
 import { Cpu, Image, Zap } from 'lucide-react';
 
-const About = forwardRef((_, ref:any) => { // Wrap your component in forwardRef
+const About = forwardRef((props, ref:any) => { // Wrap your component in forwardRef
+  console.log(props)
+
   return (
     <section ref={ref} id="about" className="py-16 bg-base-100"> {/* Attach ref to the section */}
       <div className="container mx-auto px-4">
@@ -58,5 +60,5 @@ const About = forwardRef((_, ref:any) => { // Wrap your component in forwardRef
     </section>
   );
 });
-
+About.displayName = 'About';
 export default About; // Export the component

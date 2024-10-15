@@ -28,7 +28,9 @@ const services = [
 ];
 
 // Wrap your Services component in forwardRef
-const Services = forwardRef((_, ref:any) => {
+const Services = forwardRef((props, ref:any) => {
+  
+  console.log(props)
   return (
     <section ref={ref} id="services" className="py-16 bg-base-200"> {/* Attach ref to the section */}
       <div className="container mx-auto px-4">
@@ -63,4 +65,6 @@ const Services = forwardRef((_, ref:any) => {
   );
 });
 
+
+Services.displayName = 'Services';
 export default Services; // Export the component

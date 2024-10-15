@@ -66,7 +66,7 @@ const LoginForm: React.FC<{ toggleForm: () => void }> = ({ toggleForm }) => {
               onClick={toggleForm}
               className="cursor-pointer text-blue-500 hover:underline"
             >
-              Don't have an account? Sign Up
+              Don&apos;t have an account? Sign Up
             </span>
           </p>
         </form>

@@ -6,7 +6,9 @@ import { useForm } from "react-hook-form";
 import { Send } from "lucide-react";
 
 // Wrap your Contact component in forwardRef
-const Contact = forwardRef((_, ref: any) => {
+const Contact = forwardRef((props, ref: any) => {
+  console.log(props)
+
   const [isSubmitting, setIsSubmitting] = useState(false);
   const {
     register,
@@ -118,5 +120,6 @@ const Contact = forwardRef((_, ref: any) => {
     </section>
   );
 });
+Contact.displayName = 'Contact';
 
 export default Contact; // Export the component

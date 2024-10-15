@@ -14,7 +14,9 @@ const images = [
 ];
 
 // Wrap your Gallery component in forwardRef
-const Gallery = forwardRef((_, ref: any) => {
+const Gallery = forwardRef((props, ref: any) => {
+  console.log(props)
+
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
   return (
@@ -68,5 +70,5 @@ const Gallery = forwardRef((_, ref: any) => {
     </section>
   );
 });
-
+Gallery.displayName = 'Gallery';
 export default Gallery; // Export the component
