@@ -42,7 +42,7 @@ export default function Home() {
   };
 
   return (
-    <main className="min-h-screen">
+    <div className="min-h-screen">
       <Navbar
         aboutRef={aboutRef}
         servicesRef={servicesRef}
@@ -64,6 +64,6 @@ export default function Home() {
         <Gallery ref={galleryRef} />
         <Contact ref={contactRef} />
       </motion.div>
-    </main>
+    </div>
   );
 }

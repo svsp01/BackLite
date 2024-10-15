@@ -10,7 +10,7 @@ interface HeaderProps {
 
 export default function Header({ backgroundImage, onBackgroundChange }: HeaderProps) {
   return (
-    <header 
+    <div 
       className="hero min-h-screen"
       style={{
         backgroundImage: `url(${backgroundImage})`,
@@ -51,6 +51,6 @@ export default function Header({ backgroundImage, onBackgroundChange }: HeaderPr
           </motion.div>
         </div>
       </div>
-    </header>
+    </div>
   );
 }
