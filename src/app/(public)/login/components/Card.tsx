@@ -3,11 +3,10 @@ import { motion, AnimatePresence } from 'framer-motion';
 
 interface CardProps {
   isLogin: boolean;
-  toggleForm: () => void;
   children: React.ReactNode;
 }
 
-const Card: React.FC<CardProps> = ({ isLogin, toggleForm, children }) => {
+const Card: React.FC<CardProps> = ({ isLogin, children }) => {
   return (
     <div className="card bg-base-100 shadow-xl max-w-md w-full  ">
       <AnimatePresence mode="wait">
