@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 
 interface CardProps {
   isLogin: boolean;
+  toggleForm?: () => void;
   children: React.ReactNode;
 }
 
